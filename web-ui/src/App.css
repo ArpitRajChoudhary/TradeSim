@@ -1,0 +1,139 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 24px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: -0.5px;
+  color: var(--text-h);
+}
+
+.brand span {
+  color: var(--text);
+  font-size: 13px;
+}
+
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 16px;
+  padding: 20px;
+  min-height: calc(100vh - 64px);
+}
+
+.chart-panel,
+.settings-panel {
+  min-width: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-heading h2,
+.settings-panel h2 {
+  margin: 0;
+  color: var(--text-h);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.panel-heading span {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.chart-placeholder {
+  width: 100%;
+  height: 600px;
+  min-height: 0;
+  display: block;
+  color: var(--text);
+  padding-top: 12px;
+  overflow: hidden;
+}
+
+.settings-panel p {
+  margin-top: 12px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .workspace {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .chart-placeholder {
+    height: 500px;
+  }
+}
+
+.setting-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.setting-field label {
+  color: var(--text-h);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.setting-field input {
+  width: 100%;
+  padding: 10px 12px;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+}
+
+.setting-field input:focus {
+  border-color: var(--accent);
+}
+
+.setting-field span {
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.config-summary {
+  margin-top: 24px;
+  padding: 12px;
+  background: var(--panel-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.config-summary p {
+  margin: 6px 0;
+  font-size: 12px;
+}
