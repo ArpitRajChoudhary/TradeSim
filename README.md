@@ -147,7 +147,7 @@ TradeSim/
 ### 1. Clone the Repository
 
 ``` bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/ArpitRajChoudhary/TradeSim.git
 cd TradeSim
 ```
 
